@@ -3,243 +3,457 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dikshit Maharjan | Fullstack & Frontend Developer</title>
-      <meta name="google-site-verification" content="saiTiAw6A-Ikk3AW5wY8iekThX6gYr6DFH3DIWUOQxg" />                                                      
-  <link rel="stylesheet" href="css/style.css">
+  <title>Dikshit Maharjan | Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Dikshit Maharjan, full-stack developer from Chandragiri, Kathmandu. Projects include Nepal Hub, WardSociety, a futsal matchmaking platform and more — React, Next.js, ASP.NET Core, PHP and MySQL.">
+  <meta name="author" content="Dikshit Maharjan">
+  <meta name="theme-color" content="#0a0e17">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dikshitmhrzn-sketch.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dikshit Maharjan | Full-Stack Developer">
+  <meta property="og:description" content="Full-stack developer building web platforms with React, Next.js, ASP.NET Core, PHP and MySQL. Based in Chandragiri, Kathmandu.">
+  <meta property="og:url" content="https://dikshitmhrzn-sketch.github.io/">
+  <meta property="og:site_name" content="Dikshit Maharjan">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dikshit Maharjan | Full-Stack Developer">
+  <meta name="twitter:description" content="Full-stack developer building web platforms with React, Next.js, ASP.NET Core, PHP and MySQL.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dikshit Maharjan",
+    "jobTitle": "Full-Stack Developer",
+    "email": "mailto:dikshitmaharjan@gmail.com",
+    "url": "https://dikshitmhrzn-sketch.github.io/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Chandragiri", "addressRegion": "Kathmandu", "addressCountry": "NP" },
+    "sameAs": ["https://github.com/dikshitmhrzn-sketch", "https://x.com/MaharjanDikshit"]
+  }
+  </script>
 </head>
 <body>
 
-  <nav class="navbar">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="navbar" aria-label="Primary">
     <div class="nav-container">
-      <a href="#" class="nav-logo">DM.</a>
+      <a href="#home" class="nav-logo">DM<span class="nav-logo-dot">.</span></a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#experience" class="nav-link">Education</a></li>
         <li><a href="#blog" class="nav-link">Blog</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
       </button>
     </div>
   </nav>
 
-  <main>
-    <section id="about" class="section about-section" data-reveal>
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="section hero-section">
       <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <p class="hero-kicker" data-hero>Chandragiri, Kathmandu</p>
+            <h1 class="hero-name" data-hero aria-label="Dikshit Maharjan"><span class="type-target">Dikshit Maharjan</span><span class="type-cursor" aria-hidden="true">|</span></h1>
+            <p class="hero-title" data-hero><span class="type-target">Full-Stack Developer</span><span class="type-cursor" aria-hidden="true">|</span></p>
+            <p class="hero-intro" data-hero>
+              I build web platforms end to end &mdash; React and Next.js interfaces
+              on top of ASP.NET Core and PHP backends, with MySQL underneath.
+              Recent work includes Nepal Hub, a Nepal-focused digital platform,
+              and WardSociety, a community-management system for local wards.
+            </p>
+            <div class="hero-actions" data-hero>
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-ghost">Get in Contact</a>
+            </div>
+            <div class="hero-social" data-hero>
+              <a href="https://github.com/dikshitmhrzn-sketch" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://x.com/MaharjanDikshit" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual" data-hero aria-hidden="true">
+            <div class="hero-monogram">
+              <span>DM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section" data-reveal>
+      <div class="container">
+        <h2 class="section-title"><span class="section-number">01.</span> About</h2>
         <div class="about-grid">
-          <div class="about-avatar">
-            <div class="avatar-placeholder">DM</div>
-          </div>
-          <div class="about-content">
-            <h1 class="about-name"><span class="typing-name gradient-text"></span><span class="typing-cursor">|</span></h1>
-            <p class="about-title"><span class="typing-subtitle"></span></p>
-            <p class="about-bio">
-              I build resilient, user-focused applications from concept to deployment.
-              With over 1 years of experience across fintech, SaaS, and e-commerce,
-              I specialize in crafting clean APIs, performant frontends, and systems
-              that scale. I care deeply about code quality, developer experience,
-              and shipping products people love to use.
+          <div class="about-body">
+            <p>
+              I&rsquo;m a full-stack developer based in Chandragiri, Kathmandu.
+              Most of my work lives at the intersection of public-facing web
+              apps and the systems behind them &mdash; authentication, roles,
+              databases and the APIs that tie everything together.
             </p>
-            <div class="about-details">
-              <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Chandragiri, KTM</span>
-              <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> dikshitmaharjan@gmail.com</span>
-            </div>
-            <div class="about-social">
-              <a href="https://github.com/dikshitmhrzn-sketch" target="_blank" aria-label="GitHub"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-              <a href="#" aria-label="LinkedIn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-              <a href="https://x.com/MaharjanDikshit" target="_blank" aria-label="Twitter / X"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-            </div>
+            <p>
+              I care about writing code that is honest about what it does:
+              features that are actually finished, data that is actually real,
+              and interfaces that stay usable on a slow connection and a small
+              screen.
+            </p>
           </div>
+          <aside class="about-facts" aria-label="Quick facts">
+            <h3 class="about-facts-title">Quick facts</h3>
+            <ul class="fact-list">
+              <li>
+                <span class="fact-key">Based in</span>
+                <span class="fact-value">Chandragiri, Kathmandu</span>
+              </li>
+              <li>
+                <span class="fact-key">Focus</span>
+                <span class="fact-value">Full-stack web development</span>
+              </li>
+              <li>
+                <span class="fact-key">Studying</span>
+                <span class="fact-value">B.S. Computer Science, Tribhuvan University</span>
+              </li>
+              <li>
+                <span class="fact-key">Email</span>
+                <span class="fact-value"><a href="mailto:dikshitmaharjan@gmail.com">dikshitmaharjan@gmail.com</a></span>
+              </li>
+            </ul>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section projects-section" data-reveal>
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section" data-reveal>
       <div class="container">
-        <h2 class="section-title"><span class="section-number">01.</span> <span class="gradient-text">Projects</span></h2>
-        <div class="projects-grid">
+        <h2 class="section-title"><span class="section-number">02.</span> Skills</h2>
+        <div class="skills-grid">
 
-          <div class="project-card" data-reveal>
-            <div class="project-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+          <article class="skill-card" data-reveal style="--i:0">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
-            <h3 class="project-title">E-Commerce Platform</h3>
-            <p class="project-desc">
-              A full-featured online store with real-time inventory, payment processing
-              via Stripe, and an admin dashboard for order management.
-            </p>
-            <div class="project-tech">
-              <span>React</span><span>Node.js</span><span>MySQL</span><span>Stripe</span>
+            <h3 class="skill-name">Frontend</h3>
+            <ul class="skill-list">
+              <li>HTML5 &amp; CSS3</li>
+              <li>JavaScript &amp; TypeScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+              <li>Bootstrap</li>
+            </ul>
+          </article>
+
+          <article class="skill-card" data-reveal style="--i:1">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/><path d="M6 6.5h.01M6 17.5h.01"/></svg>
             </div>
-            <div class="project-links">
-              <a href="#" class="project-link">Live Demo</a>
-              <a href="#" class="project-link">Source</a>
+            <h3 class="skill-name">Backend</h3>
+            <ul class="skill-list">
+              <li>ASP.NET Core</li>
+              <li>PHP</li>
+              <li>REST APIs</li>
+              <li>Role-based access</li>
+              <li>ASP.NET Core Identity</li>
+            </ul>
+          </article>
+
+          <article class="skill-card" data-reveal style="--i:2">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
             </div>
-          </div>
+            <h3 class="skill-name">Databases</h3>
+            <ul class="skill-list">
+              <li>MySQL</li>
+              <li>Prisma</li>
+              <li>Entity Framework Core</li>
+              <li>Schema design &amp; migrations</li>
+            </ul>
+          </article>
 
-          <div class="project-card" data-reveal>
-            <div class="project-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
+          <article class="skill-card" data-reveal style="--i:3">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18.5h2"/></svg>
             </div>
-            <h3 class="project-title">Fitness Planner webApp</h3>
-            <p class="project-desc">
-              A Kanban-style project management tool with drag-and-drop boards,
-              real-time collaboration, and automated workflow triggers.
-            </p>
-            <div class="project-tech">
-              <span>Vue.js</span><span>Firebase</span><span>Tailwind</span>
+            <h3 class="skill-name">Mobile</h3>
+            <ul class="skill-list">
+              <li>Flutter</li>
+              <li>Android builds</li>
+              <li>Shared API clients</li>
+            </ul>
+          </article>
+
+          <article class="skill-card" data-reveal style="--i:4">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
             </div>
-            <div class="project-links">
-              <a href="#" class="project-link">Live Demo</a>
-              <a href="#" class="project-link">Source</a>
-            </div>
-          </div>
-
-          <div class="project-card" data-reveal>
-            <div class="project-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            </div>
-            <h3 class="project-title">Resturant Management System</h3>
-            <p class="project-desc">
-              A terminal-based analytics dashboard that processes and visualizes
-              server logs with real-time tailing and custom query filters.
-            </p>
-            <div class="project-tech">
-              <span>Go</span><span>SQLite</span><span>Chart.js</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link">Source</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section experience-section" data-reveal>
-      <div class="container">
-        <h2 class="section-title"><span class="section-number">02.</span> <span class="gradient-text">Experience</span></h2>
-
-        <div class="timeline">
-
-          <div class="timeline-item" data-reveal>
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">2026 &mdash; 2026</div>
-              <h3 class="timeline-role">Full-Stack Developer</h3>
-              <h4 class="timeline-company">StartupXYZ</h4>
-              <p class="timeline-desc">
-                Built the core platform from the ground up — user auth, payment
-                integration, and real-time notifications. 
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item" data-reveal>
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">2025 &mdash; 2026</div>
-              <h3 class="timeline-role">Junior Developer</h3>
-              <h4 class="timeline-company">WebAgency Co.</h4>
-              <p class="timeline-desc">
-                Developed and maintained 2+ client websites and internal tools
-                using React, Django, and WordPress. Introduced automated testing
-                that raised code coverage from 20% to 85%.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item" data-reveal>
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">2022 &mdash; 2026</div>
-              <h3 class="timeline-role">B.S. Computer Science</h3>
-              <h4 class="timeline-company">Tribhuvan University</h4>
-              <p class="timeline-desc">
-                ongoing studies . Focused on distributed systems and
-                human-computer interaction. 
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="blog" class="section blog-section" data-reveal>
-      <div class="container">
-        <h2 class="section-title"><span class="section-number">03.</span> <span class="gradient-text">Blog</span></h2>
-
-        <div class="blog-grid">
-
-          <article class="blog-card" data-reveal>
-            <div class="blog-date">July 10, 2026</div>
-            <h3 class="blog-title">How I Built &amp; Hosted a Restaurant Management System on InfinityFree</h3>
-            <p class="blog-excerpt">
-              A walkthrough of building a restaurant management system focused on
-              making table reservations and order placement quick and easy for
-              both staff and customers — deployed on InfinityFree's free hosting.
-            </p>
-            <a href="https://testonly.rf.gd/" target="_blank" class="blog-readmore">Read more &rarr;</a>
+            <h3 class="skill-name">Tools &amp; Testing</h3>
+            <ul class="skill-list">
+              <li>Git</li>
+              <li>Vite</li>
+              <li>Vitest</li>
+              <li>Playwright</li>
+              <li>XAMPP</li>
+            </ul>
           </article>
 
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact-section" data-reveal>
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section" data-reveal>
       <div class="container">
-        <h2 class="section-title"><span class="section-number">04.</span> <span class="gradient-text">Contact</span></h2>
+        <h2 class="section-title"><span class="section-number">03.</span> Projects</h2>
+        <p class="section-lead">Selected work &mdash; built as complete systems rather than isolated pages.</p>
+
+        <div class="projects-grid">
+
+          <article class="project-card" data-reveal style="--i:0">
+            <div class="project-media">
+              <img src="assets/projects/nepalhub-home.webp" alt="Nepal Hub home page showing the search bar, navigation and API status panel" loading="lazy" width="1200" height="717">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Nepal Hub</h3>
+              <p class="project-desc">
+                A Nepal-focused digital platform that brings tools, a daily quiz,
+                a student hub, jobs, a business directory, offers and events into
+                one place. The React client talks to an ASP.NET Core API over
+                HTTP; MySQL runs through EF Core, and a Flutter mobile app reuses
+                the same endpoints. Core modules are live with seeded content.
+              </p>
+              <div class="project-tech">
+                <span>React</span><span>TypeScript</span><span>ASP.NET Core</span><span>MySQL</span><span>Flutter</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal style="--i:1">
+            <div class="project-media">
+              <img src="assets/projects/wardsociety-admin.webp" alt="WardSociety ward administration portal sign-in screen with ward selection" loading="lazy" width="1200" height="872">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">WardSociety</h3>
+              <p class="project-desc">
+                A community-management application for local wards: public notices,
+                services and businesses, a resident portal for applications,
+                complaints and appointments, and separate admin consoles per ward
+                with role-based access. Built with the Next.js App Router, Prisma
+                and MySQL; later phases are still being verified.
+              </p>
+              <div class="project-tech">
+                <span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal style="--i:2">
+            <div class="project-media">
+              <img src="assets/projects/futsal-home.webp" alt="Futsal Matchmaking landing page with court search and tournament buttons" loading="lazy" width="1200" height="750">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Futsal Matchmaking</h3>
+              <p class="project-desc">
+                A futsal matchmaking and management system: find courts and
+                opponents, book slots, run tournaments, manage teams, message
+                other players and track rankings. Separate player, owner and
+                admin panels, a PHP/MySQL backend hardened by a security audit
+                pass, and a Flutter mobile app sharing the same API.
+              </p>
+              <div class="project-tech">
+                <span>PHP</span><span>MySQL</span><span>Flutter</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal style="--i:3">
+            <div class="project-media">
+              <img src="assets/projects/restaurant-cover.svg" alt="Illustrated cover for the Restaurant Management System project" loading="lazy" width="1200" height="750">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Restaurant Management System</h3>
+              <p class="project-desc">
+                A restaurant website with menu browsing, table reservations,
+                order placement and tracking, favourites and payment initiation.
+                Written in PHP with MySQL, and written up in a blog post covering
+                how it was built and hosted on free hosting.
+              </p>
+              <div class="project-tech">
+                <span>PHP</span><span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/dikshitmhrzn-sketch/resturantmanagement" target="_blank" rel="noopener noreferrer">Source</a>
+                <a class="project-link" href="https://testonly.rf.gd/" target="_blank" rel="noopener noreferrer">Live site</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal style="--i:4">
+            <div class="project-media">
+              <img src="assets/projects/hospital-dashboard.webp" alt="Hospital management dashboard showing report statistics and a progress tracker" loading="lazy" width="1200" height="750">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Hospital Management System</h3>
+              <p class="project-desc">
+                A healthcare dashboard focused on patients, doctors, appointments
+                and medical reports: upload flow, an AI analysis step, a report
+                progress tracker and an appointment view. This is a frontend
+                prototype &mdash; static HTML, CSS and JavaScript with Bootstrap;
+                the backend is not wired up yet.
+              </p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE / EDUCATION ============ -->
+    <section id="experience" class="section" data-reveal>
+      <div class="container">
+        <h2 class="section-title"><span class="section-number">04.</span> Education &amp; Focus</h2>
+
+        <div class="timeline">
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">2022 &mdash; 2026</p>
+              <h3 class="timeline-role">B.S. Computer Science</h3>
+              <p class="timeline-company">Tribhuvan University &mdash; ongoing</p>
+              <p class="timeline-desc">
+                Undergraduate studies in computer science, alongside building
+                full-stack applications for real use cases.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">Current focus</p>
+              <h3 class="timeline-role">Full-stack web development</h3>
+              <p class="timeline-company">React &middot; Next.js &middot; ASP.NET Core &middot; PHP &middot; MySQL</p>
+              <p class="timeline-desc">
+                Building complete systems rather than isolated pages: authentication
+                and roles, database schema and migrations, APIs, and the interfaces
+                on top of them &mdash; including Flutter clients that reuse the
+                same endpoints.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BLOG ============ -->
+    <section id="blog" class="section" data-reveal>
+      <div class="container">
+        <h2 class="section-title"><span class="section-number">05.</span> Blog</h2>
+
+        <div class="blog-grid">
+          <article class="blog-card" data-reveal>
+            <p class="blog-date"><time datetime="2026-07-10">July 10, 2026</time></p>
+            <h3 class="blog-title">How I Built &amp; Hosted a Restaurant Management System on InfinityFree</h3>
+            <p class="blog-excerpt">
+              A walkthrough of building a restaurant management system focused on
+              making table reservations and order placement quick and easy for
+              both staff and customers &mdash; deployed on InfinityFree&rsquo;s
+              free hosting.
+            </p>
+            <a href="https://testonly.rf.gd/" target="_blank" rel="noopener noreferrer" class="blog-readmore">Read more <span aria-hidden="true">&rarr;</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section" data-reveal>
+      <div class="container">
+        <h2 class="section-title"><span class="section-number">06.</span> Contact</h2>
         <div class="contact-grid">
           <div class="contact-info">
             <p class="contact-intro">
-              I'm always open to interesting opportunities, collaborations, or
+              I&rsquo;m open to interesting opportunities, collaborations, or
               just a good conversation about tech. Feel free to reach out.
             </p>
             <div class="contact-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <span>dikshitmaharjan@gmail.com</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <a href="mailto:dikshitmaharjan@gmail.com">dikshitmaharjan@gmail.com</a>
             </div>
             <div class="contact-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Chandragiri, KTM</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Chandragiri, Kathmandu</span>
             </div>
             <div class="contact-social">
-              <a href="https://github.com/dikshitmhrzn-sketch" target="_blank" aria-label="GitHub"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-              <a href="#" aria-label="LinkedIn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-              <a href="https://x.com/MaharjanDikshit" target="_blank" aria-label="Twitter / X"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              <a href="https://github.com/dikshitmhrzn-sketch" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://x.com/MaharjanDikshit" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
             </div>
           </div>
-          <form class="contact-form" id="contactForm" action="https://formspree.io/f/mbdnbjjy" method="POST">
+
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/mbdnbjjy" method="POST" novalidate>
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" required placeholder="Your name">
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="your@email.com">
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="your@email.com">
             </div>
             <div class="form-group">
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="5" required placeholder="What's on your mind?"></textarea>
             </div>
             <button type="submit" class="btn-submit">Send Message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
           </form>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Dikshit Maharjan. Built with plain HTML, CSS &amp; JS.</p>
+    <div class="container footer-inner">
+      <p>&copy; 2026 Dikshit Maharjan &middot; Chandragiri, Kathmandu</p>
+      <div class="footer-social">
+        <a href="https://github.com/dikshitmhrzn-sketch" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://x.com/MaharjanDikshit" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+      <p class="footer-note">Built with plain HTML, CSS &amp; JavaScript.</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>
